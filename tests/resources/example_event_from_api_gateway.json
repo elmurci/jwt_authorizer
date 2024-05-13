@@ -1,0 +1,47 @@
+{
+    "body": null,
+    "headers": null,
+    "httpMethod": "GET",
+    "isBase64Encoded": false,
+    "multiValueHeaders": null,
+    "multiValueQueryStringParameters": null,
+    "path": "/boto/sdfdsfsdfs",
+    "pathParameters": {
+        "botoId": "sdfdsfsdfs"
+    },
+    "queryStringParameters": null,
+    "requestContext": {
+        "accountId": "481724841148",
+        "apiId": "5q06q4o1qe",
+        "domainName": "testPrefix.testDomainName",
+        "domainPrefix": "testPrefix",
+        "extendedRequestId": "H900rFixLPEFhWg=",
+        "httpMethod": "GET",
+        "identity": {
+            "accessKey": "ASIAXAKIJXS6KD5BLR4O",
+            "accountId": "481724841148",
+            "apiKey": "test-invoke-api-key",
+            "apiKeyId": "test-invoke-api-key-id",
+            "caller": "481724841148",
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "test-invoke-source-ip",
+            "user": "481724841148",
+            "userAgent": "aws-internal/3 aws-sdk-java/1.12.76 Linux/5.4.134-73.228.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.302-b08 java/1.8.0_302 vendor/Oracle_Corporation cfg/retry-mode/standard",
+            "userArn": "arn:aws:iam::481724841148:root"
+        },
+        "path": "/boto/{botoId}",
+        "protocol": "HTTP/1.1",
+        "requestId": "6a672296-a4b6-49ef-907d-3ea440456738",
+        "requestTime": "29/Oct/2021:10:35:48 +0000",
+        "requestTimeEpoch": 1635503748164,
+        "resourceId": "2lmiei",
+        "resourcePath": "/boto/{botoId}",
+        "stage": "test-invoke-stage"
+    },
+    "resource": "/boto/{botoId}",
+    "stageVariables": null
+}
