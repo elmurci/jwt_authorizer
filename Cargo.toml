@@ -1,11 +1,11 @@
 [package]
 name = "jwt_authorizer"
 version = "0.0.1"
-authors = ["Javi Romero <javi@boto.io>"]
+authors = ["Javi Romero <elmurci@gmail.com>"]
 edition = "2018"
 description = "Authorizer service"
 documentation = "INTERNAL SITE"
-repository = "https://github.com/botoapp/b-authorizer"
+repository = "https://github.com/elmurci/jwt_authorizer"
 
 [dependencies]
 futures = { version = "0.3", default-features = false, features = ["async-await"] }

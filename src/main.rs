@@ -47,10 +47,10 @@ async fn execute(event: APIGatewayCustomAuthorizerRequest, _context: Context) ->
     // TODO! -- add additional key-value pairs associated with the authenticated principal
     // these are made available by APIGW like so: $context.authorizer.<key>
     // additional context is cached
-    let audience = env::var("BOTO_TOKEN_AUDIENCE").expect("Please specify an audience as env var");
-    let issuer = env::var("BOTO_TOKEN_ISSUER").expect("Please specify an issuer as env var");
+    let audience = env::var("JWTAUTH_TOKEN_AUDIENCE").expect("Please specify an audience as env var");
+    let issuer = env::var("JWTAUTH_TOKEN_ISSUER").expect("Please specify an issuer as env var");
     // TODO: cache this
-    let keys_repo = env::var("BOTO_KEYS_REPO").expect("Please specify a keys repo (jwk) as env var");
+    let keys_repo = env::var("JWTAUTH_KEYS_REPO").expect("Please specify a keys repo (jwk) as env var");
     let keys = utils::get_jwks(keys_repo).await?;
     let mut auth = Auth::new(
         audience, issuer, keys

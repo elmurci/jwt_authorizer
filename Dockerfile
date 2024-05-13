@@ -37,7 +37,7 @@ USER ${USER}
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 
-WORKDIR /boto_services
+WORKDIR /services
 
 # Copy our build
 COPY --from=builder /build/target/x86_64-unknown-linux-musl/release/jwt_authorizer ./
@@ -45,4 +45,4 @@ COPY --from=builder /build/target/x86_64-unknown-linux-musl/release/jwt_authoriz
 # Use an unprivileged user.
 USER ${USER}:${GROUP}
 
-CMD ["/boto_services/jwt_authorizer"]
+CMD ["/services/jwt_authorizer"]

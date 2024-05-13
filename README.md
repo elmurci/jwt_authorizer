@@ -1,4 +1,4 @@
-# Boto Authorization Service
+# Authorization Service
 
 Rust service that validates JWT tokens from Auth0.
 
@@ -16,13 +16,13 @@ The service:
 
 | Name  | Description  |
 |---|---|
-| BOTO_KEYS_REPO  | Repo where the keys to validate the token reside (Example: https://boto.eu.auth0.com/.well-known/jwks.json)  | 
-| BOTO_TOKEN_AUDIENCE  | Token audience  | 
-| BOTO_TOKEN_ISSUER  | Token issuer  | 
+| JWTAUTH_KEYS_REPO  | Repo where the keys to validate the token reside (Example: https://xxx.eu.auth0.com/.well-known/jwks.json)  | 
+| JWTAUTH_TOKEN_AUDIENCE  | Token audience  | 
+| JWTAUTH_TOKEN_ISSUER  | Token issuer  | 
 
 ## Custom Claim
 
-This service extracts the value of the custom claim `https://boto.io/claims/user_id` (Boto ID) to the downstream services.
+This service extracts the value of the custom claim (ID) to the downstream services.
 
 ## Run
 
